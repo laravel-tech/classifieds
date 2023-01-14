@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PHPUnit">
+    <option name="directories">
+      <list>
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/User/Tests" />
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests" />
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests" />
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests" />
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests" />
+        <option value="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests" />
+        <option value="$PROJECT_DIR$/app/Ship/Tests" />
+      </list>
+    </option>
+  </component>
+</project>

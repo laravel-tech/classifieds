@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="682f4be4-f7b5-47fa-bde5-d49958b104d7" name="Changes" comment="Add Apiato to the project">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/classifieds.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/ApiLoginProxyForWebClientAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/ApiLogoutAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/ApiRefreshProxyForWebClientAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/ForgotPasswordAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/GetAuthenticatedUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/RegisterUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/ResetPasswordAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/SendVerificationEmailAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/VerifyEmailAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/WebLoginAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Actions/WebLogoutAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Classes/LoginCustomAttribute.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Configs/appSection-authentication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Exceptions/EmailNotVerifiedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Exceptions/InvalidEmailVerificationDataException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Exceptions/InvalidResetPasswordTokenException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Exceptions/LoginFailedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Exceptions/RefreshTokenMissingException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Mails/ForgotPassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Mails/Templates/forgot-password.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Middlewares/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Notifications/EmailVerified.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Notifications/PasswordReset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Notifications/VerifyEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Notifications/Welcome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Providers/MainServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Providers/MiddlewareServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/CallOAuthServerTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/CreatePasswordResetTokenTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/CreateUserByCredentialsTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/LoginTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/MakeRefreshCookieTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tasks/SendVerificationEmailTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Stubs/oauth-private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Stubs/oauth-public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/CreatePasswordResetTokenTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/CreateUserByCredentialsTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/ForgotPasswordActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/LoginCustomAttributeTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/RedirectIfAuthenticatedMiddlewareTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/RegisterUserActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/ResetPasswordActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/SendVerificationEmailTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Tests/Unit/WebLoginActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/Traits/AuthenticationTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/GetAuthenticatedUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/LoginProxyForWebClientController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/LogoutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/RefreshProxyForWebClientController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/RegisterUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/SendVerificationEmailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Controllers/VerifyEmailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/ForgotPasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/GetAuthenticatedUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/LoginProxyPasswordGrantRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/LogoutRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/RefreshProxyRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/RegisterUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/ResetPasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/SendVerificationEmailRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Requests/VerifyEmailRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/ForgotPassword.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/GetAuthenticatedUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/LoginProxyForWebClient.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/LoginUsingCredentialGrant.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/LoginUsingPasswordGrant.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/Logout.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/RefreshProxyForWebClient.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/RegisterUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/ResetPassword.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/SendVerificationEmail.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Routes/VerifyEmail.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/ApiTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/ApiLoginProxyForWebClientTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/ApiLogoutTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/ApiRefreshProxyForWebClientTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/ForgotPasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/GetAuthenticatedUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/RegisterUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/ResetPasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/SendVerificationEmailTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/Stubs/oauth-private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/Stubs/oauth-public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/API/Tests/Functional/VerifyEmailTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Controllers/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Controllers/LogoutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Requests/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Requests/LogoutRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Routes/GetLogin.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Routes/PostLogin.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Routes/PostLogout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/UI/WEB/Views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authentication/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/AssignRolesToUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/AttachPermissionsToRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/AttachPermissionsToUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/CreatePermissionAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/CreateRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/DeleteRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/DetachPermissionsFromRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/DetachPermissionsFromUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/FindPermissionAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/FindRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/GetAllPermissionsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/GetAllRolesAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/GetRolePermissionsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/GetUserPermissionsAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/GetUserRolesAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/RevokeRolesFromUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/SyncPermissionsOnRoleAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Actions/SyncUserRolesAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Configs/appSection-authorization.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Configs/permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Factories/PermissionFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Factories/RoleFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Migrations/2016_12_29_201047_create_permission_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Migrations/2017_04_22_122453_add_extra_fields_to_permissions_tale.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Migrations/2017_04_22_122522_add_extra_fields_to_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Repositories/PermissionRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Repositories/RoleRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Seeders/AuthorizationDefaultUsersSeeder_4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Seeders/AuthorizationGivePermissionsToRolesSeeder_3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Seeders/AuthorizationPermissionsSeeder_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Data/Seeders/AuthorizationRolesSeeder_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Models/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Providers/MainServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/AssignRolesToUserTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/CreatePermissionTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/CreateRoleTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/DeleteRoleTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/DetachPermissionsFromRoleTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/DetachPermissionsFromUserTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/FindPermissionTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/FindRoleTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/GetAllPermissionsTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/GetAllRolesTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tasks/RevokeRoleFromUserTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/CreatePermissionTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/CreateRoleTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/DeleteRoleTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/FindPermissionTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/FindRoleTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/PermissionFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/PermissionMigrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Tests/Unit/RoleFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Traits/AuthorizationTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/Traits/IsResourceOwnerTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/AssignRolesToUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/AttachPermissionsToRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/AttachPermissionsToUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/CreateRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/DeleteRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/DetachPermissionsFromRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/DetachPermissionsFromUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/FindPermissionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/FindRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/GetAllPermissionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/GetAllRolesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/GetRolePermissionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/GetUserPermissionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/GetUserRolesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/RevokeRolesFromUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/SyncPermissionOnRoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Controllers/SyncUserRolesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/AssignRolesToUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/AttachPermissionsToRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/AttachPermissionsToUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/CreateRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/DeleteRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/DetachPermissionsFromRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/DetachPermissionsFromUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/FindPermissionRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/FindRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/GetAllPermissionsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/GetAllRolesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/GetRolePermissionsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/GetUserPermissionsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/GetUserRolesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/RevokeRolesFromUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/SyncPermissionsOnRoleRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Requests/SyncUserRolesRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/AssignRolesToUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/AttachPermissionsToRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/AttachPermissionsToUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/CreateRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/DeleteRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/DetachPermissionsFromRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/DetachPermissionsFromUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/FindPermission.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/FindRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/GetAllPermissions.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/GetAllRoles.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/GetRolePermissions.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/GetUserPermissions.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/GetUserRoles.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/RevokeRolesFromUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/SyncPermissionOnRole.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/SyncUserRoles.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/_permission.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/_role.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Routes/_userPermissions.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/ApiTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/AssignRolesToUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/AttachPermissionToUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/AttachPermissionsToRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/CreateRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/DeleteRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/DetachPermissionFromUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/DetachPermissionsFromRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/FindPermissionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/FindRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/GetAllPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/GetAllRolesTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/GetRolePermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/GetUserPermissionsTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/GetUserRolesTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/RevokeRolesFromUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/SyncPermissionsOnRoleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Tests/Functional/SyncUserRolesTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Transformers/PermissionTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/API/Transformers/RoleTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/WEB/Controllers/UnauthorizedController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/WEB/Requests/UnauthorizedRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/WEB/Routes/GetUnauthorized.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/UI/WEB/Views/unauthorized.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/Authorization/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/CreateAdminAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/DeleteUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/FindUserByIdAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/GetAllUsersAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/UpdateUserAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Actions/UpdateUserPasswordAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Configs/appSection-user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Data/Factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Data/Migrations/2000_01_01_000001_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Data/Migrations/2000_01_01_000002_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Data/Repositories/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Data/Seeders/UserPermissionsSeeder_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Notifications/PasswordUpdatedNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Providers/MainServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tasks/DeleteUserTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tasks/FindUserByEmailTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tasks/FindUserByIdTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tasks/GetAllUsersTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tasks/UpdateUserTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/CreateAdminActionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/DeleteUserTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/FindUserByIdTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/PasswordResetsMigrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/UpdateUserTaskTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/UserFactoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/Tests/Unit/UsersMigrationTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Controllers/DeleteUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Controllers/FindUserByIdController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Controllers/GetAllUsersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Controllers/UpdateUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Controllers/UpdateUserPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Requests/DeleteUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Requests/FindUserByIdRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Requests/GetAllUsersRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Requests/UpdateUserPasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Requests/UpdateUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/DeleteUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/FindUserById.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/GetAllUsers.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/UpdateUser.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/UpdateUserPassword.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Routes/_user.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/ApiTestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/Functional/DeleteUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/Functional/FindUserByIdTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/Functional/GetAllUsersTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/Functional/UpdateUserPasswordTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Tests/Functional/UpdateUserTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/API/Transformers/UserTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/UI/CLI/Commands/CreateAdminCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/AppSection/User/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Actions/GenerateDocumentationAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/ApiDocJs/private/apidoc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/ApiDocJs/public/apidoc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/ApiDocJs/shared/header.template.en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/ApiDocJs/shared/header.template.ru.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Configs/vendor-documentation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Exceptions/NoDocTypesFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Exceptions/WrongDocTypeException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Providers/DocumentGeneratorServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Tasks/GenerateAPIDocsTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Tasks/GetAllDocsTypesTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Tasks/RenderApidocJsonTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Tasks/RenderTemplatesTask.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Traits/DocsGeneratorTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/Traits/HasDocAccessTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/API/Routes/__generalAccepted.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/API/Routes/__generalMultiple.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/CLI/Commands/GenerateApiDocsCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Requests/GetPrivateDocumentationRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Requests/GetPublicDocumentationRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Routes/GetPrivateDocumentation.v1.private.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Routes/GetPublicDocumentation.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/UI/WEB/Views/documentation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Documentation/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/WARNING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/Actions/FindMessageForApiRootVisitorAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/Actions/FindMessageForApiV1VisitorAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/Configs/vendor-welcome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/API/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/API/Routes/ApiLandingPage.v1.public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/API/Routes/ApiRoot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/CLI/Commands/SayWelcomeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/WEB/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/WEB/Routes/WebLandingPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/UI/WEB/Views/welcome-page.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Containers/Vendor/Welcome/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Broadcasts/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Commands/HelloWorldCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Commands/closures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/apiato.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/debugbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/fractal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/hashids.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/ide-helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/notification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Configs/repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Contracts/MustVerifyEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/CreatedTodayCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/GroupByCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/IsNullCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/NotNullCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByCreationDateAscendingCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByCreationDateDescendingCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByFieldCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByNameCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByUpdateDateAscendingCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/OrderByUpdateDateDescendingCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/ThisBetweenDatesCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/ThisEqualThatCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/ThisLikeThatCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Criterias/ThisUserCriteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Events/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/CreateResourceFailedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/DeleteResourceFailedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/EmailIsMissedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/Handlers/ExceptionsHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/InternalErrorException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/NotAuthorizedResourceException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/NotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/NotImplementedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/UnsupportedFractalSerializerException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/UpdateResourceFailedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Exceptions/ValidationFailedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Generators/CustomStubs/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Helpers/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Kernels/ConsoleKernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Kernels/HttpKernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Listeners/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Mails/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Mails/Templates/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Middlewares/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Migrations/2017_09_12_174826_create_notifications_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Migrations/2021_03_01_150940_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Notifications/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Actions/Action.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Actions/SubAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Commands/ConsoleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Controllers/ApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Controllers/WebController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Criterias/Criteria.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Events/Event.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Exceptions/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Factories/Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Jobs/Job.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Listeners/Listener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Mails/Mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Middlewares/Middleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Models/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Models/UserModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Notifications/Notification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Policies/Policy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/MainServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/MiddlewareServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Repositories/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Requests/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Seeders/Seeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Tasks/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Tests/PhpUnit/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Transformers/Transformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Parents/Values/Value.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Providers/ShipProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Seeders/SeedDeploymentData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Seeders/SeedTestingData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/Tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Ship/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/ar/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/ar/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/ar/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/ar/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/es/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/es/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/es/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/es/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fa/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fa/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fa/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fa/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fr/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fr/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fr/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lang/fr/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php_cs.dist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpspec.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/psalm.dist.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/vinkla/hashids" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/wikimedia/composer-merge-plugin" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/apiato/core" />
+      <path value="$PROJECT_DIR$/vendor/apiato/container-installer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/prettus/laravel-validation" />
+      <path value="$PROJECT_DIR$/vendor/prettus/l5-repository" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/manager" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/vendor/league/fractal" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/league/config" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/vendor/hashids/hashids" />
+      <path value="$PROJECT_DIR$/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-fractal" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/spatie/fractalistic" />
+      <path value="$PROJECT_DIR$/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/openlss/lib-array2xml" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2KJH959K6DIg0pFzjne2Nw72qhp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/mojtaba/Projects/classifieds",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="682f4be4-f7b5-47fa-bde5-d49958b104d7" name="Changes" comment="" />
+      <created>1673685610244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673685610244</updated>
+      <workItem from="1673685611324" duration="13000" />
+      <workItem from="1673685631810" duration="655000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Apiato to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Apiato to the project" />
+  </component>
+</project>
